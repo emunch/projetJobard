@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.6)
 project(M1_ISI_TP5_formes_texturées)
 
 find_package(OpenGL REQUIRED)
-find_package(Qt4    REQUIRED)
+find_package(Qt4 REQUIRED)
 set(QT_USE_QTXML 1)
 set(QT_USE_QTOPENGL 1)
 include(${QT_USE_FILE})
