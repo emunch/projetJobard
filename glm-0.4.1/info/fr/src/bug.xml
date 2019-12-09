@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="./bug.xsl"?>
+
+<bugs>
+    <bug number="3" title="Non conformité au standard ISO C++ des données des classes _xvec*" statue="Résolue" date="2005-02-15">
+        <entry title="DISCUTION">Le mot clé 'union' est utilisé pour permettre l'accès aux composantes des vecteurs avec plusieurs noms de variable différent. De plus, des templates sont utilisés pour créer deux catégories de types de vecteurs : vec* et ivec*. Enfin, les structures anonymes ne sont pas autorisées par la norme ISO C++.</entry>
+        <entry title="DISCUTION">Le problème provient du fait que Visual C++ 7.1 ne supporte pas correctement l'utilisation simultanée des templates avec les unions.</entry>
+        <entry title="RESOLUTION">Si -pedantic n'est pas utilisé avec G++ alors le code compile avec succès. Dans l'attente d'un meilleur compromit, le code reste dans l'état. Comme pour le bug 4, une solution ultime serait de ne plus utiliser les templates pour la définistion des vecteurs.</entry>
+    </bug>
+    <bug number="2" title="'not' est un mot clé sous GCC" statue="Partiellement résolue" date="2005-03-03">
+        <entry title="DISCUTION">GCC supporte tous les mots clés du C++ ce qui inclut not qui n'est autre que l'équivalent de l'opérateur '!'. Il y a donc un problème avec GLM car GLSL définit la fonction 'not'.</entry>
+        <entry title="PROPOSITION">En surchargement l'operateur '!' ou le mot clé 'not' on peut résoudre en partie le problème mais en ignorant le concept d'espace de nom de GLM. Si le code source contient la chaîne 'glm::not' alors GCC retourne une erreur.</entry>
+        <entry title="PROPOSITION">'not' est un mot clé C++ donc GLM ne doit pas definir de fonction 'not'. Cependant, tous les compilateurs ne supportent pas ce mot clé (VC7.1). Faut il changer son nom ? Pour le moment, il est recommendé de ne pas utiliser 'not'.</entry>
+    </bug>
+    <bug number="1" title="*vec* don't allow multiple components selection." statue="Non résolue" date="2005-01-30">
+        <entry title="DISCUTION">Les specifications de GLSL permet un accès à plusieurs compossants à la fois pour les types verteurs. Par exemple, avec GLSL le code suivant est correct : vec3 MyVertor = vec4(1.0, 1.0, 1.0, 0.0).xyz.</entry>
+        <entry title="DISCUTION">Il semble difficile de créer une fonctionnalité équivalente en C++ car 'x', 'y' et 'z' dans l'exemple précédent peuvent être ordonné dans n'importe quel ordre et répéter de zéro à quatre fois pour un total de quatre composantes maximum.</entry>
+    </bug>
+</bugs>

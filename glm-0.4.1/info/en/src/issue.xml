@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="./issue.xsl"?>
+
+<issues>
+    <issue number="10" title="Several useful tools are missing in GLSL, is this possible to add them ?" statue="Partially resolved" date="2005-03-21">
+        <entry title="DISCUTION">GLSL is not the ultimate mathematics library, i.e. for matrices operations, specs are very restricted. There aren't any functions to get the determinant, inverse, or a matrix transpose. Moreover, there are a few vector types and no quaternions.</entry>
+        <entry title="PROPOSAL">What about completing the missing features using the extensions ? It will be developed from GLSL conventions and may add for exemple the extension GLM_GTX_quaternion, defining __quatGT type and conjugateGT function.</entry>
+        <entry title="PROPOSAL">Extensions may be available through a separate file called glmext.h instead of being directly into the library core file.</entry>
+        <entry title="PROPOSAL">It would be interesting to suggest GLM extensions implementations directly in GLSL to increase portability. It may hopefully end by submitting extensions to ARB.</entry>
+    </issue>
+    <issue number="9" title="Should GLM be included into a namespace ?" statue="Unresolved" date="2005-02-18">
+        <entry title="DISCUTION">The use of a namespace allows to prevenf from any name collision problem with other libraries like STL. GLSL uses a reserved 'namespace' keyword but does not define it. OpenGL uses a C technic for the namespaces management with the 'gl' prefix. What name should we give to this namespace ? 'gl', 'glsl', 'glm' or 'sl' ? What is the best solution ? C-like or C++-like namespaces ?</entry>
+        <entry title="DISCUTION">Bug #3 says that 'not' is a C++ keyword. C-style namespaces use would resolves this bug but GLSL has been built from C upon a C++ logic.</entry>
+    </issue>
+    <issue number="8" title="Could the OpenGL API be considered ?" statue="Resolved" date="2005-03-04">
+        <entry title="DISCUTION">The interaction with OpenGL is not the purpose of GLM. However, GLM should be easily usable with OpenGL and some features could be welcome. i.e., using vec3 type with Vertex3fv function should simplify and optimize the program. Eventually, semantically speaking, vec3 is more accurate and stronger than addressing on a potential 3 floats table.</entry>
+        <entry title="RESOLUTION">If it is possible to make easy the interoperability between GLM and OpenGL, then this work is recommended if semantic stays correct. GLM must also remain independent towards OpenGL.</entry>
+    </issue>
+    <issue number="7" title="How to consider reserved keywords ?" statue="Partially resolved" date="2005-01-26">
+        <entry title="DISCUTION">GLSL specifications include unimplemented reserved keywords list. Their use must return an error. Some of them already exist in C++.</entry>
+        <entry title="RESOLUTION">GLM can only allow C++ reserved keywords. The others must be undefined so the compiler returns an error.</entry>
+    </issue>
+    <issue number="6" title="How to manage GLSL qualifiers  ?" statue="Partially resolved" date="2005-03-04">
+        <entry title="DISCUTION">GLSL defines six variable qualifiers types : const, varying, uniform, attrib, in, out, inout.</entry>
+        <entry title="RESOLUTION">'const' variables are only usable in a local way into a shader. They are available for vertex and fragments shaders. GLSL's 'const' are similar to C++ 'static const', i.e. the variable only exists inside a compilation unit (.o files with GCC).</entry>
+        <entry title="RESOLUTION">'varying' variables offer a communication interface between vertex and fragment sahder. 'uniform' and 'attrib' variables are a way of communication between C/C++ program and shaders, so 'varying' are useless in the C++ program; so this qualifier is not allowed.</entry>
+        <entry title="SUGGESTION">Some programmers are already using 'in', 'ou' and 'inout' qualifiers for semantic purpose. They define them as empty '#define'.</entry>
+        <entry title="DISCUTION">It seems difficult to keep the same syntax than GLSL for 'uniform' and 'attrib' variables although this notion seems interesting. Why not keeping it only for their semantic properties ?</entry>
+    </issue>
+    <issue number="5" title="Should integrated variables be considered ?" statue="Resolved" date="2005-01-13">
+        <entry title="SUGGESTION">All integrated variables matches with OpenGL state variables. So there are all accessible from the OpenGL API.</entry>
+    </issue>
+    <issue number="4" title="Should sampler* types be considered ?" statue="Resolved" date="2005-03-05">
+        <entry title="DISCUTION">smapler* types come from GL_ARB_multitexure extension. Values matches with a texture unit.</entry>
+        <entry title="SUGGESTION">A sampler type would offer an additionnal semantic value.</entry>
+        <entry title="SUGGESTION">No, this is not the GLM objective.</entry>
+    </issue>
+    <issue number="3" title="How to manage specific access to *vec* types components ?" statue="Unresolved" date="2005-01-22">
+        <entry title="DISCUTION">GLSL allows several components to be accessed at the same time. Moreover, GLSL let the possibility to the user to order components as he wants. To implement such a possibility, 4² * 3 * 2 = 96 fuctions should be added for vec4 type, for example (components number : 4, access types : 3, readonly access and write access : 2).</entry>
+        <entry title="RESOLUTION">A solution witch reach GLSL conformance have been found. However it need lot of functions. This feature is coming in a futur release.</entry>
+    </issue>
+    <issue number="2" title="How to access to *vec* type components ?" statue="Closed" date="2005-01-15">
+        <entry title="DISCUTION">GLSL allows an access to a component with many different names, that explains the component notion. i.e. the first vec3 component is accessible with .x, .r, .s.</entry>
+        <entry title="PROPOSAL">A possibility would be creating three functions for each component.</entry>
+        <entry title="PROPOSAL">Another would be using the keyword 'union'.</entry>
+        <entry title="RESOLUTION">The first solution allows to keep components values in a private classes table, but in this case, the overloaded operator [] must be used to access values and/or functions per component that is not conform to GLSL specifications. The second respect GLSL rules but components are public. In this case, this is not a real problem so this second solution is kept.</entry>
+    </issue>
+    <issue number="1" title="How to consider dedicated functions to fragment shaders and ftransform function ?" statue="Closed" date="2005-01-12">
+        <entry title="RESOLUTION">GLSL specifications tell that 'fragment processing functions' are only available for fragment shaders and function ftransform is only available for vertex shaders. The C/C++ program must be considered as a third program type so this functions are not available.</entry>
+    </issue>
+</issues>

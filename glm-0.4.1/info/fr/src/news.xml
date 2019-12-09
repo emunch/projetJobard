@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="./news.xsl"?>
+
+<page_news>
+    <about>
+        <paragraph>
+			OpenGL Mathematics (GLM) est une bibliothèque mathématique pour les applications 3D, basée sur l'<link href="http://oss.sgi.com/projects/ogl-sample/registry/ARB/GLSLangSpec.Full.1.10.59.pdf">OpenGL Shading Language</link>(GLSL).
+        </paragraph>
+        <paragraph>
+			Le but du projet est d'offrir au programmeur 3D le même confort lorsqu'il développe sur GPU et CPU. Il ne s'agit pas de se limiter aux outils de GLSL, un système d'extensions est prévu afin d'étendre les possibilités de GLSL. Ce développement d'extensions est basée sur les <link href="http://oss.sgi.com/projects/ogl-sample/registry/doc/GLSLExtensionRules.txt">convensions d'extensions de GLSL</link>. 
+        </paragraph>
+        <paragraph>
+            OpenGL Mathematics est développé sous <link href="http://www.gnu.org">licence GNU LGPL</link>.
+        </paragraph>
+    </about>
+	<news index="0009" date="22-05-2006" title="GLM 0.4.1 disponible">
+        <redacteur adresse="mailto:contact@g-truc.net">Groove</redacteur>
+		<paragraph>
+		    Une mise à jour de GLM est disponible. Elle inclut simplement des exemples pour commencer facilement.
+		</paragraph>
+		<paragraph>
+		    Les exemples montrent comment utiliser GLM avec le mode intermédiaire et les vertex arrays d'OpenGL. Ils montrent également comment utiliser les extensions de GLM pour remplacer des fonctions de GLU ou d'OpenGL ce qui peut entraîner un léger gain de performances du fait de la réduction des changements d'états d'OpenGL.
+		</paragraph>
+    	<source type="Download" adresse="http://prdownloads.sourceforge.net/glf/glm-0.4.1.zip?download">GLM 0.4.1 (zip, 1.6 Mo)</source>
+    	<source type="Download" adresse="http://prdownloads.sourceforge.net/glf/glm-0.4.1.7z?download">GLM 0.4.1 (7z, 521 Ko)</source>
+	</news>
+	<news index="0008" date="17-05-2006" title="GLM 0.4.0 disponible">
+        <redacteur adresse="mailto:contact@g-truc.net">Groove</redacteur>
+		<paragraph>
+		    Cette nouvelle version introduit les premières fonctionnalités de GLSL 1.2 comme prévu. De plus, diverse extensions ont été ajouté ou mise à jours. Enfin, il n'est plus nécessaire d'inclure windows.h avant glm.h quand windows.h est nécessaire.
+		</paragraph>
+		<paragraph>
+		    Le nombre de fonctionnalités de GLM, ce qui inclut les extensions, commence à vraiment augmenter le temps de compilation. C'est pourquoi, l'utilisation des precompiled headers est recommendé.
+		</paragraph>
+    	<source type="Download" adresse="http://prdownloads.sourceforge.net/glf/glm-0.4.0.zip?download">GLM 0.4.0</source>
+	</news>
+	<news index="0007" date="23-04-2006" title="Roadmap pour l'année">
+        <redacteur adresse="mailto:contact@g-truc.net">Groove</redacteur>
+		<paragraph>
+		    La version 0.4 complètera les opérateurs des matrices et des vecteurs et apportera des fonctionnalités de GLSL 1.2. Tout d'abord, la clarification sur les conversions sera intégrée. De plus, les matrices 4 par 3 et l'"outer product" seront disponibles sous forme d'extensions. La fonction "transpose" est déjà disponible sous forme d'extension.
+		</paragraph>
+		<paragraph>
+		    La version 0.5 intègrera les nouvelles fonctionnalités de GLSL 1.2 dans le core de GLM. 
+		</paragraph>
+		<paragraph>
+		    La version 0.6 supportera les opérateurs swizzles en lecture et écriture. (cad: vec3 v1(1.0, 2.0, 3.0); vec3 v2 = v1.xxx; v1.zyx = v;).
+		</paragraph>
+	</news>
+	<news index="0006" date="22-04-2006" title="GLM 0.3.2 disponible">
+        <redacteur adresse="mailto:contact@g-truc.net">Groove</redacteur>
+		<paragraph>
+		    Cette version corrige deux bugs importants. Premièrement, un bug sur l'opérateur de division des types imat4 et mat4 ainsi qu'un bug sur l'accès des composantes des vecteurs par le moyen des coordonnées de textures.
+		</paragraph>
+    	<source type="Téléchargement" adresse="http://prdownloads.sourceforge.net/glf/glm-0.3.2.zip?download">GLM 0.3.2</source>
+	</news>
+	<news index="0005" date="28-03-2006" title="GLM 0.3.1 disponible">
+        <redacteur adresse="mailto:contact@g-truc.net">Groove</redacteur>
+		<paragraph>
+		    Cette mise à jour apporte le support de GCC 4.0 (Testé sous Linux et MacOS X) et 4.1 (testé sous Linux) ainsi que quelques optimisations.
+		</paragraph>
+		<paragraph>
+			La prochaine version sera basée sur les spécifications 1.2 de GLSL.
+		</paragraph>
+    	<source type="Téléchargement" adresse="http://prdownloads.sourceforge.net/glf/glm-0.3.1.zip?download">GLM 0.3.1</source>
+	</news>
+	<news index="0004" date="19-02-2006" title="GLM 0.3 disponible">
+        <redacteur adresse="mailto:contact@g-truc.net">Groove</redacteur>
+		<paragraph>
+		    Une nouvelle version de GLM est disponible. Elle améliore la conformité avec GLSL au niveau des conversions et contructions des types de données. De plus, des extensions ont étés ajoutés dont certaines pour gérer les nombres flottants à double et démi précisions. Enfin, une documentation Doxygens a été ajouté.
+		</paragraph>
+		<paragraph>
+			Le raytrace a été mise à jour pour GLM 0.3 et a été testé sous Visual C++ 7.1, Visual C++ 8.0, GCC 3.2.3 et GCC 3.4.2.
+		</paragraph>
+    	<source type="Téléchargement" adresse="http://prdownloads.sourceforge.net/glf/glm-0.3.zip?download">GLM 0.3</source>
+    	<source type="Téléchargement" adresse="http://prdownloads.sourceforge.net/glf/raytrace-b2.0.zip?download">Raytrace</source>
+    	<source type="Documentation" adresse="../html/index.html">Documentation online</source>
+	</news>
+	<news index="0003" date="06-05-2005" title="GLM 0.2 disponible">
+        <redacteur adresse="mailto:groove@g-truc.net">Groove</redacteur>
+		<paragraph>
+		    Une nouvelle version de GLM est disponible. Elle corrige quelques, améliorés la cohérence du portable de GLSL en C++ et surtout propose des extensions expérimentales étendant les fonctionnalités de GLSL.
+		</paragraph>
+		<paragraph>
+			Le projet supporte les quaternions, propose de nouvelles fonctionnalités pour manipuler les couleurs, les vecteurs et les matrices. Pour exemple, GLM permet le changement de base des couleurs, le calcul du projeté d'un vecteur et les transformations 2D et 3D.
+		</paragraph>
+		<paragraph>
+			Pour présenter les possibilités de cette version, un programme d'exemple est disponible. Il s'agit d'un Ray Tracer élémentaire supportant les rayons réfléchis et réfractés, trois types de lampes (ponctuelles, directionnelles et spots), deux types d'objets (sphère, plan) et utilisant massivement les possibilités de GLM pour cela.
+		</paragraph>
+	</news>
+	<news index="0002" date="04-05-2005" title="Pages anglaises">
+        <redacteur adresse="mailto:groove@g-truc.net">Groove</redacteur>
+		<paragraph>
+		    La partie anglaise du site est maintenant disponible.
+		</paragraph>
+	</news>
+	<news index="0001" date="21-02-2005" title="Sortie de GLM 0.1">
+        <redacteur adresse="mailto:groove@g-truc.net">Groove</redacteur>
+		<paragraph>
+		    La première distribution de GLM est disponible. La bibliothèque supporte une partie des spécifications de GLSL : Tous les types de vecteurs et de matrices ainsi que tous les opérateurs et les fonctions qui leurs sont associés.
+		</paragraph>
+		<paragraph>
+		    Pour le moment, il n'y a pas de bonne documentation mais vous pouvez largement vous baser sur les spécifications de GLSL en considérant toute inconhérence avec GLM comme une erreur. Cependant, gradez en tête que la bibliothèque est inclut dans l'espace de nom "glm".
+		</paragraph>
+		<paragraph>
+		    Le projet est indépendent de la plateform de développement et a été testé avec succès sous Visual C++ 7.1, MinGW 3.4 and GCC 3.4.
+		</paragraph>
+    	<source type="Téléchargement" adresse="http://prdownloads.sourceforge.net/glf/glm-0.1-ur.zip?download">GLM 0.1 User Release</source>
+    	<source type="Téléchargement" adresse="http://prdownloads.sourceforge.net/glf/glm-0.1-uc.zip?download">GLM 0.1 Contributor Release</source>
+    	<source type="Documentation" adresse="http://oss.sgi.com/projects/ogl-sample/registry/ARB/GLSLangSpec.Full.1.10.59.pdf">spécification de GLSL 1.10.59</source>
+	</news>
+</page_news>

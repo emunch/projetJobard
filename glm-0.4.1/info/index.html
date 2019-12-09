@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html><head><title>OpenGL Mathematics : News</title><meta http-equiv="Content-Language" content="fr, be, ca, lu, ch" /><meta http-equiv="Content-Type" content="application/xhtml+xml; charset=iso-8859-1" /><meta name="copyright" content="&#65533; 2005 C-Truc Creation" /><link href="./common/style.css" rel="stylesheet" media="screen, print, embossed" type="text/css" /></head><body><div class="title">OpenGL Mathematics</div><table><tr><td class="menu"><div class="menu1"><a href="./fr/news.html">Français</a></div><br /><div class="menu1">Menu</div><div class="menu2"><a class="menu" href="./en/news.html">News</a></div><div class="menu2"><a class="menu" href="./en/download.html">Download</a></div><div class="menu2"><a class="menu" href="./en/changelog.html">Changelog</a></div><div class="menu2"><a class="menu" href="./en/issue.html">Issues</a></div><div class="menu2"><a class="menu" href="./en/bug.html">Bugs</a></div><div class="menu2"><a class="menu" href="./html/index.html">Documentation</a></div><div class="menu2"><a class="menu" href="./en/link.html">Links</a></div><br /><div class="menu2"><a href="http://validator.w3.org/check/referer"><img class="menu-img" src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1!" /></a></div><div class="menu2"><a href="http://www.opengl.org"><img class="menu-img" src="./common/opengl.jpg" alt="OpenGL" /></a></div><div class="menu2"><a href="http://www.sourceforge.net"><img class="menu-img" src="./common/sourceforge.gif" alt="SourceForge" /></a></div><div class="menu2"><a href="http://www.g-truc.net"><img class="menu-img" src="./common/g-truc.jpg" alt="G-Truc" /></a></div></td><td class="page"><div><div class="title2">Présentation</div><div class="paragraph">
+			OpenGL Mathematics (GLM) is a mathematics library for 3D applications based on <a href="http://oss.sgi.com/projects/ogl-sample/registry/ARB/GLSLangSpec.Full.1.10.59.pdf">OpenGL Shading Language</a>(GLSL). 
+        </div><br /><div class="paragraph">
+			The project's goal is to provide to 3D programmer the same tools when he develops under GPU and CPU. This project wasn't limited by GLSL tools, an extension system based on <a href="http://oss.sgi.com/projects/ogl-sample/registry/doc/GLSLExtensionRules.txt">GLSL extensions development conventions</a> allow to extend GLSL capabilities.
+        </div><br /><div class="paragraph">
+			GLM is developed under <a href="http://www.gnu.org">GNU LGPL</a>.
+        </div><br /></div><div><div class="title2">22-05-2006 : GLM 0.4.1 released</div><div><div class="paragraph">
+		    A GLM update is available. It simply includes some examples for a sweet start with GLM. 
+		</div><br /><div class="paragraph">
+		    The examples show how to use GLM with OpenGL intermediate mode and OpenGL vertex arrays. Also, they show how to use GLM extensions to replace GLU and OpenGL function witch could slightly increase performances by decreasing the number of OpenGL states changes. 
+		</div><br />Download : <a href="http://prdownloads.sourceforge.net/glf/glm-0.4.1.zip?download">GLM 0.4.1 (zip, 1.6 Mo)</a><br />Download : <a href="http://prdownloads.sourceforge.net/glf/glm-0.4.1.7z?download">GLM 0.4.1 (7z, 521 Ko)</a><br /></div><br /></div><div><div class="title2">17-05-2006 : GLM 0.4.0 released</div><div><div class="paragraph">
+		    This release introduces first GLSL 1.2 features as planed. Also, various new extensions have been added and updated. Finally, it's not anymore required to include windows.h before glm.h when windows.h is required.
+		</div><br /><div class="paragraph">
+		    The number of features of GLM, including extensions, start to really increase the compilation time. That's why it's recommended to use precompiled headers.
+		</div><br />Download : <a href="http://prdownloads.sourceforge.net/glf/glm-0.4.0.zip?download">GLM 0.4.0</a><br /></div><br /></div><div><div class="title2">23-04-2006 : Roadmap for the years</div><div><div class="paragraph">
+		    Version 0.4 will complete matrices and vectors operators and will add GLSL 1.2 features. First, conversions simplifications will be integrated. Then, 4 per 3 matrices and outer product will be available from extensions. The transpose function is already available from extension.
+		</div><br /><div class="paragraph">
+		    Version 0.5 will integrate GLSL 1.2 features to GLM core.
+		</div><br /><div class="paragraph">
+		    Version 0.6 will add swizzle operators in reading and writing. (eg: vec3 v1(1.0, 2.0, 3.0); vec3 v2 = v1.xxx; v1.zyx = v;).
+		</div><br /></div><br /></div><div><div class="title2">22-04-2006 : GLM 0.3.2 released</div><div><div class="paragraph">
+		    This release corrects two main bugs. First, a bug of the imat4 and mat4 division operators and other correct the vectors components access from texture coordinate way.
+		</div><br />Download : <a href="http://prdownloads.sourceforge.net/glf/glm-0.3.2.zip?download">GLM 0.3.2</a><br /></div><br /></div><div><div class="title2">28-03-2006 : GLM 0.3.1 released</div><div><div class="paragraph">
+		    This update adds GCC 4.0 support for MacOS X and Linux and GCC 4.1 under Linux. Also, its provides some optimisations.
+		</div><br /><div class="paragraph">
+			Further release will prodive GLSL 1.2 compliances.
+		</div><br />Download : <a href="http://prdownloads.sourceforge.net/glf/glm-0.3.1.zip?download">GLM 0.3.1</a><br /></div><br /></div><div><div class="title2">19-02-2006 : GLM 0.3 released</div><div><div class="paragraph">
+		    A new release of GLM is now available. It improves GLSL data type conversion and construction compliance. Also, It's adds extensions like some to manage double-precision and half-precision float numbers. Finally a Doxygen documentation has been added.
+		</div><br /><div class="paragraph">
+			This new release have been tested under Visual C++ 7.1, Visual C++ 8.0, GCC 3.2.3 et GCC 3.4.2.
+		</div><br />Download : <a href="http://prdownloads.sourceforge.net/glf/glm-0.3.zip?download">GLM 0.3</a><br />Download : <a href="http://prdownloads.sourceforge.net/glf/raytrace-b2.0.zip?download">Raytrace</a><br />Documentation : <a href="../html/index.html">Online documentation</a><br /></div><br /></div><div><div class="title2">06-05-2005 : GLM 0.2 released</div><div><div class="paragraph">
+		    A new release of GLM is now available. A few bugs have been fixed, the portability of GLSL into C++ has been improved, and new experimental extensions have been implemented, enhancing GLSL features.
+		</div><br /><div class="paragraph">
+			Project now supports quaternions, adds new features to handle colors, vectors and matrices. For example, GLM allows base colors changing, vector projected operations, and 2D/3D transforms.
+		</div><br /><div class="paragraph">
+			To demo the features of this new version, a sample program is included. It is a simple Ray Tracer supporting reflected and refracted rays, three lights types (point, directionnal and spot), two objects types (sphere, plan), using all of the GLM possibilities.
+		</div><br /></div><br /></div><div><div class="title2">04-05-2005 : English pages</div><div><div class="paragraph">
+		    The english section of this site is now available.
+		</div><br /></div><br /></div><div><div class="title2">21-02-2005 : GLM 0.1 is available</div><div><div class="paragraph">
+		    This is the first public availability of GLM. This library supports part of GLSL specifications : All vectors and matrices types, and all the operators and associated functions.
+		</div><br /><div class="paragraph">
+		    For now, there isn't detailed documentation, but you can freely have a look on GLSL specifications. Consider any incoherence with GLM as an error. Keep in mind the library is included in the namespace "glm".
+		</div><br /><div class="paragraph">
+		    This project is multi platform and was successfully tested under Visual C++ 7.1, MinGW 3.4 and GCC 3.4.
+		</div><br />Download : <a href="http://prdownloads.sourceforge.net/glf/glm-0.1-ur.zip?download">GLM 0.1 User Release</a><br />Download : <a href="http://prdownloads.sourceforge.net/glf/glm-0.1-uc.zip?download">GLM 0.1 Contributor Release</a><br />Documentation : <a href="http://oss.sgi.com/projects/ogl-sample/registry/ARB/GLSLangSpec.Full.1.10.59.pdf">GLSL 1.10.59 specifications</a><br /></div><br /></div></td></tr></table><div class="title3">Copyright © 2005-2006 <a href="http://www.g-truc.net">G-Truc Creation</a></div><div class="title3">OpenGL is a trademark of Silicon Graphics Inc.</div><div class="title3">GLSL specifications are under copyright and their content is property of 3D Labs</div></body></html>

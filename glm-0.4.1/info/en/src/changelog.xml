@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="./changelog.xsl"?>
+
+<changelog>
+    <update date="2006-05-22">
+        <entry>Add 4 examples of use with OpenGL under Windows and Linux</entry>
+    </update>
+    <update date="2006-05-16">
+        <entry>It's not anymore required to include windows.h before glm.h whether windows.h is required</entry>
+    </update>
+    <update date="2006-05-04">
+        <entry>Improved _xvec3 conversions</entry>
+        <entry>Improved _xvec2 conversions</entry>
+        <entry>Added left hand side vec2 swizzle operators</entry>
+        <entry>Improved _bvec4 conversions</entry>
+        <entry>Improved _bvec3 conversions</entry>
+        <entry>Improved _bvec2 conversions</entry>
+    </update>
+    <update date="2006-04-28">
+        <entry>Add _xref* structures for swizzle operators implementation</entry>
+        <entry>Seperate bvec* and xvec* types in different files</entry>
+        <entry>Update core functions code</entry>
+    </update>
+    <update date="2006-04-22">
+        <entry>Fixed texture coordinate components access</entry>
+        <entry>Added GLM_GTX_mul extension.</entry>
+        <entry>Added GLM_GTX_inertia extension.</entry>
+    </update>
+    <update date="2006-04-21">
+        <entry>Added right hand side vec2 swizzle operators</entry>
+        <entry>Improved _xvec4 conversions</entry>
+    </update>
+    <update date="2006-04-20">
+        <entry>Updated GLM_GTX_quaterion, added log and exp functions</entry>
+        <entry>Added GLM_GTX_matrix_major_storage extension.</entry>
+    </update>
+    <update date="2006-04-19">
+        <entry>Reorganize types code</entry>
+		<entry>Complete addition and subtraction vertrices operators</entry>
+    </update>
+	<update date="2006-04-18">
+		<entry>Complete addition and subtraction matrices operators</entry>
+		<entry>Optimize increment and decrement operators</entry>
+	</update>
+	<update date="2006-04-17">
+		<entry>Fixed _xmat4 division</entry>
+	</update>
+	<update date="2006-03-30">
+		<entry>Added GLM_GTX_outer_product extension.</entry>
+	</update>
+	<update date="2006-03-27">
+		<entry>Added Linux support under GCC 4.0 and 4.1.</entry>
+	</update>
+	<update date="2006-03-26">
+		<entry>Optimisation of increment and decrement operators.</entry>
+	</update>
+	<update date="2006-03-20">
+		<entry>Added MacOS X support under GCC 4.0.</entry>
+	</update>
+	<update date="2006-02-19">
+		<entry>Added GLM_GTX_extend extension to wishlist in position 27.</entry>
+		<entry>Added GLM_GTX_euler_angles extension to wishlist in position 28.</entry>
+		<entry>Added Doxygen documentation.</entry>
+	</update>
+	<update date="2006-01-30">
+		<entry>Optimized GLM_GTX_integer implementation.</entry>
+	</update>
+	<update date="2006-01-27">
+		<entry>Deleted explicit conversions from array to type to prevent unespected conversions.</entry>
+	</update>
+	<update date="2006-01-16">
+		<entry>Fixed bugs</entry>
+		<entry>Improved types conversions.</entry>
+		<entry>Added GLM_GTX_vector_access extension to wishlist in position 25.</entry>
+		<entry>Added GLM_GTX_random extension to wishlist in position 26.</entry>
+	</update>
+	<update date="2006-01-13">
+		<entry>Fixed bugs</entry>
+	</update>
+	<update date="2006-01-10">
+		<entry>Updated GLM_GTX_integer extension.</entry>
+	</update>
+	<update date="2006-01-09">
+		<entry>Added GLM_GTX_fast_exponential extension to wishlist in position 24.</entry>
+	</update>
+	<update date="2006-01-08">
+		<entry>Optimized _xvec* copy.</entry>
+	</update>
+	<update date="2006-01-07">
+		<entry>Added GLM_GTX_fast_trigonometry extension to wishlist in position 23.</entry>
+		<entry>Added factorial function to GLM_GTX_integer extension.</entry>
+	</update>
+	<update date="2006-01-05">
+		<entry>Added GLM_GTX_half extension to wishlist in position 21.</entry>
+		<entry>Optimized normalize function.</entry>
+		<entry>Global optimisation for debugging time</entry>
+		<entry>Added GLM_GTX_integer extension to wishlist in position 18.</entry>
+		<entry>Optimized clamp function.</entry>
+	</update>
+	<update date="2006-01-04">
+		<entry>Added GLM_GTX_fast_square_root extension to wishlist in position 19.</entry>
+		<entry>Added GLM_GTX_inverse_transpose extension to wishlist in position 20.</entry>
+		<entry>Fixed missing of vec4 * mat4 operator.</entry> 
+	</update>
+	<update date="2005-12-23">
+		<entry>Reorganization of extensions.</entry>
+		<entry>Fixed vec2 constructeur bug.</entry>
+	</update>
+	<update date="2005-11-22">
+		<entry>Updated GLM_GTX_length2 extension.</entry>
+		<entry>Renamed GLM_GTX_length2 extension to GLM_GTX_norm.</entry>
+	</update>
+	<update date="2005-11-12">
+		<entry>Fixed GLM_GTX_quaterion implémentation bugs.</entry>
+	</update>
+	<update date="2005-11-09">
+		<entry>Updated GLM_GTX_projection extension.</entry>
+	</update>	
+	<update date="2005-10-30">
+		<entry>Added GLM_GTX_transform2 extension to wishlist in position 18.</entry>
+	</update>
+	<update date="2005-09-28">
+		<entry>Updated for GCC 4.0.</entry>
+	</update>
+	<update date="2005-08-12">
+		<entry>Fixed normalization bug with LookAtGTX.</entry>
+	</update>
+	<update date="2005-07-15">
+		<entry>Add array conversion to GLM types.</entry>
+	</update>
+	<update date="2005-07-02">
+		<entry>Added GL_GTX_euler_angles extension to wishlist in position 17.</entry>
+	</update>
+	<update date="2005-06-24">
+		<entry>Added GLM_GTX_matrix_selection extension to wishlist in position 16.</entry>
+		<entry>Added GLM_GTX_matrix_selection extension support.</entry>
+	</update>
+	<update date="2005-06-22">
+		<entry>Updated GLM_GTX_projection extension to wishlist in position 15.</entry>
+	</update>
+	<update date="2005-06-21">
+		<entry>Added GLM_GTX_projection extension to wishlist in position 15.</entry>
+	</update>
+	<update date="2005-06-09">
+		<entry>Fixed bug from rotateGTX with quaternion.</entry>
+		<entry>Fixed matrix vector product.</entry>
+		<entry>Add vector usage to describe transformations axis.</entry>
+	</update>
+    <update date="2005-05-05">
+		<entry>Added GLM_GTX_quaternion extension support</entry>
+    </update>
+    <update date="2005-05-02">
+		<entry>Add GLM_GTX_transform 2D transform support</entry>
+    </update>
+    <update date="2005-05-01">
+		<entry>Add GLM_GTX_transform 3D transform support</entry>
+    </update>
+    <update date="2005-04-29">
+		<entry>Updated GLM_GTX_transform extension to wishlist in position 2</entry>
+    </update>
+    <update date="2005-04-23">
+        <entry>Added GLM_GTX_vector_comp_mult extension to whislist in position 14</entry>
+		<entry>Added GLM_GTX_vector_comp_mult extension support</entry>
+    </update>
+    <update date="2005-04-22">
+        <entry>Added GLM_GTX_color_space extension to whislist in position 13</entry>
+        <entry>Added GLM_GTX_color_space extension support</entry>
+        <entry>Added GLM_GTX_double extension support</entry>
+    </update>
+    <update date="2005-04-10">
+        <entry>Overload of GLSL functions used by extentions instead of create new functions</entry>
+    </update>
+    <update date="2005-04-08">
+        <entry>Added GLM_GTX_optimum_pow extension to whislist in position 11</entry>
+        <entry>Added GLM_GTX_double extension to wishlist in position 12</entry>
+    </update>
+    <update date="2005-04-03">
+        <entry>Updated GLM_GTX_matrix_cross_product extension to wishlist in position 8</entry>
+        <entry>Added GLM_GTX_matrix_cross_product extension support</entry>
+        <entry>Added GLM_GTX_projection extension to whislist in position 9</entry>
+        <entry>Added GLM_GTX_perpendicular extension to wishlist in position 10</entry>
+        <entry>Added GLM_GTX_projection extension support</entry>
+        <entry>Added GLM_GTX_perpendicular extension support</entry>
+        <entry>Changed extensions organisation</entry>
+    </update>
+    <update date="2005-03-27">
+        <entry>Added *vec* by *mat* product</entry>
+        <entry>Updated GLM_GTX_determinant extension to wishlist in position 4</entry>
+        <entry>Updated GLM_GTX_inverse extension to wishlist in position 5</entry>
+        <entry>Updated GLM_GTX_length2 extension to wishlist in position 6</entry>
+        <entry>Updated GLM_GTX_orthonormalize extension to wishlist in position 7</entry>
+        <entry>Added GLM_GTX_determinant extension support</entry>
+        <entry>Added GLM_GTX_inverse extension support</entry>
+        <entry>Added GLM_GTX_length2 extension support</entry>
+        <entry>Added GLM_GTX_orthonormalize extension support</entry>
+    </update>
+    <update date="2005-03-21">
+        <entry>Added bug #7 : Vector constructor non conform</entry>
+        <entry>Updated issue #13 : Only ARB can allow extensions adding new operators</entry>
+    </update>
+    <update date="2005-03-13">
+        <entry>Added GLM_GTX_orthonormalize extension to wishlist in position 7</entry>
+        <entry>Added GLM_GTX_matrix_cross_product extension to wishlist in position 8</entry>
+        <entry>Updated issue #10 : Using template functions members</entry>
+        <entry>Updated *vec* types following issue #10 guidance</entry>
+    </update>
+    <update date="2005-03-06">
+        <entry>Fixed bug #2 with '#error'</entry>
+    </update>
+    <update date="2005-03-05">
+        <entry>Updated issue #4</entry>
+    </update>
+    <update date="2005-03-04">
+        <entry>Updated issue #13</entry>
+        <entry>Updated issue #8</entry>
+        <entry>Updated issue #6</entry>
+        <entry>Updated issue #4</entry>
+    </update>
+    <update date="2005-03-03">
+        <entry>Bugs #2 and #5 are now one</entry>
+        <entry>Updated / operator for vec* types with support of the divisibility of two vectors, and the divisibility term to term</entry>
+    </update>
+    <update date="2005-02-28">
+        <entry>Updated GLM_GTX_transpose extension to wishlist in position 8</entry>
+        <entry>Added GLM_GTX_transpose extension support</entry>
+        <entry>Fixed mat* types constructor scalar-parameted</entry>
+    </update>
+    <update date="2005-02-27">
+        <entry>Fixed mat* types product by a scalar</entry>
+    </update>
+    <update date="2005-02-25">
+        <entry>Updated function 'not'</entry>
+        <entry>Defined identificators following compilers</entry>
+        <entry>Added GLM_GTX_length2 extension to wishlist in position 6</entry>
+        <entry>Optimized mat3 type divide operator</entry>
+    </update>
+    <update date="2005-02-21">
+        <entry>GLM 0.1 is out</entry>
+    </update>
+    <update date="2005-02-18">
+        <entry>Updated issue #4</entry>
+        <entry>Updated issue #6</entry>
+        <entry>Updated issue #9</entry>
+        <entry>Updated issue #12</entry>
+        <entry>Updated issue #13</entry>
+        <entry>Updated issues ordering</entry>
+    </update>
+    <update date="2005-02-17">
+        <entry>Updated vec* types + operator. Can now add a vector and a scalar, term by term</entry>
+        <entry>Updated vec* types - operator. Can now minus a vector and a scalar, term by term</entry>
+        <entry>Updated vec* types * operator. Can now multiply a vector and a scalar, term by term</entry>
+        <entry>Deleted issue #11, which was erroneous</entry>
+    </update>
+    <update date="2005-02-15">
+        <entry>Deleted from wishlist extension #6 : refract function is defined by version 1.10.59 from GLSL specs</entry>
+        <entry>Updated reflect function tests</entry>
+        <entry>Added fucntion reflect with its tests</entry>
+        <entry>Using typename 'genType' for functions templates</entry>
+        <entry>Added bug #5</entry>
+        <entry>Updated function sqrt</entry>
+        <entry>Added function log with its tests</entry>
+        <entry>Added function exp with its tests</entry>
+        <entry>Added function log2 with its tests</entry>
+        <entry>Updated cross function</entry>
+        <entry>Updated bvec* types data implementation</entry>
+        <entry>Added bug #6</entry>
+    </update>
+    <update date="2005-02-14">
+        <entry>Updated issue #13</entry>
+        <entry>Converted text files into XML</entry>
+        <entry>Modified files hierarchy</entry>
+    </update>
+    <update date="2005-02-13">
+        <entry>Updated clamp function</entry>
+        <entry>Added function noise1 with its tests</entry>
+        <entry>Added function noise2 with its tests</entry>
+        <entry>Added function noise3 with its tests</entry>
+        <entry>Added function noise4 with its tests</entry>
+    </update>
+    <update date="2005-02-08">
+        <entry>Enhanced mat4 type division operator</entry>
+        <entry>Added function sqrt with its tests</entry>
+        <entry>Added function inversesqrt with its tests</entry>
+        <entry>Added function exp2 with its tests</entry>
+        <entry>Added function log2 with its tests</entry>
+    </update>
+    <update date="2005-02-07">
+        <entry>Modified *vec* types constructors implementation, chooses initialisation instead of affectation</entry>
+        <entry>Added function reflect with its tests</entry>
+        <entry>Updated tan function</entry>
+        <entry>Fixed mat4 type * operator</entry>
+    </update>
+    <update date="2005-02-05">
+        <entry>Added GLM_GTX_refract extension to wishlist in position 5.</entry>
+    </update>
+    <update date="2005-02-03">
+        <entry>Added default constructor for mat* types</entry>
+    </update>
+    <update date="2005-02-02">
+        <entry>Added mat2 and vec2 type * operator</entry>
+        <entry>Added mat3 and vec3 type * operator</entry>
+        <entry>Added mat4 and vec4 type * operator</entry>
+    </update>
+    <update date="2005-02-01">
+        <entry>Added GLM_GTX_transpose extension to wishlist in position 3</entry>
+        <entry>Added GLM_GTX_determinant extension to wishlist in position 4</entry>
+        <entry>Added GLM_GTX_inverse extension to wishlist in position 5</entry>
+        <entry>Added / operator for two mat3 types</entry>
+        <entry>Enhanced *vec* types conception</entry>
+        <entry>Enhanced *mat* types conception</entry>
+    </update>
+    <update date="2005-01-31">
+        <entry>Updated bug #3</entry>
+        <entry>Updated issue #10</entry>
+        <entry>Added function matrixCompMult with its tests</entry>
+        <entry>Updated mat* type constant access operators</entry>
+        <entry>Added bug #4 : Conversion problem between two different *vec* types</entry>
+    </update>
+    <update date="2005-01-30">
+        <entry>Added bug #1 : Inability to select multiple components</entry>
+        <entry>Added bug #2 : Some *vec* types conversions are not available</entry>
+        <entry>Added bug #3 : 'not' is a C++ ISO keyword</entry>
+        <entry>Added * operator for two mat3 types</entry>
+        <entry>Added * operator for two mat4 types</entry>
+        <entry>Updated mat* types</entry>
+        <entry>Updated GLM_GTX_quaternion extension to wishlist in position 1</entry>
+        <entry>Updated GLM_GTX_transform extension to wishlist in position 2</entry>
+    </update>
+    <update date="2005-01-27">
+        <entry>Added mat2 type</entry>
+        <entry>Added * operator for two mat2 types</entry>
+        <entry>Added issue #14</entry>
+        <entry>Added issue #15</entry>
+        <entry>Added mat3 type</entry>
+        <entry>Added mat4 type</entry>
+    </update>
+    <update date="2005-01-26">
+        <entry>Added function mix with its tests</entry>
+        <entry>Added function step with its tests</entry>
+        <entry>Added function smoothstep with its tests</entry>
+        <entry>Updated issue #10</entry>
+        <entry>Updated issue #12</entry>
+        <entry>Updated issue #8</entry>
+        <entry>Added type bvec4 forgotten declaration</entry>
+        <entry>Added function lessThan with its tests</entry>
+        <entry>Added function lessThanEqual with its tests</entry>
+        <entry>Added function greaterThan with its tests</entry>
+        <entry>Added function greaterThanEqual with its tests</entry>
+        <entry>Added function equal with its tests</entry>
+        <entry>Added function notEqual with its tests</entry>
+        <entry>Added function any with its tests</entry>
+        <entry>Added function all with its tests</entry>
+        <entry>Added function not with its tests</entry>
+    </update>
+    <update date="2005-01-24">
+        <entry>Added function fract with its tests</entry>
+        <entry>Added function mod with its tests</entry>
+        <entry>Added function clamp with its tests</entry>
+    </update>
+    <update date="2005-01-23">
+        <entry>Added function mod with its tests</entry>
+        <entry>Added function abs with its tests</entry>
+        <entry>Added function sign with its tests</entry>
+        <entry>Added function floor with its tests</entry>
+        <entry>Added function ceil with its tests</entry>
+        <entry>Added function min with its tests</entry>
+        <entry>Added function max with its tests</entry>
+    </update>
+    <update date="2005-01-22">
+        <entry>Updated issue #13</entry>
+        <entry>Added temporary namespace called 'glm'</entry>
+        <entry>Added function pow with its tests</entry>
+    </update>
+    <update date="2005-01-19">
+        <entry>Updated sin function tests</entry>
+        <entry>Enhanced trigonometrics functions</entry>
+        <entry>Enhanced geometric functions</entry>
+    </update>
+    <update date="2005-01-18">
+        <entry>Added xvec* type constructor taking a single scalar as parameter.</entry>
+        <entry>Added xvec* into xvec3 type conversion</entry>
+        <entry>Added xvec* into xvec4 type conversion</entry>
+        <entry>Added xvec* into bvec2 type conversion</entry>
+        <entry>Added xvec* into bvec3 type conversion</entry>
+        <entry>Added xvec* into bvec4 type conversion</entry>
+        <entry>Added function sin with its tests</entry>
+        <entry>Added function cos with its tests</entry>
+        <entry>Added function tan with its tests</entry>
+        <entry>Added function asin with its tests</entry>
+        <entry>Added function acos with its tests</entry>
+        <entry>Added function atan with its tests</entry>
+        <entry>Added issue #13</entry>
+    </update>
+    <update date="2005-01-17">
+        <entry>Added function radians with its tests</entry>
+        <entry>Added function degrees with its tests</entry>
+        <entry>Added issue #9</entry>
+    </update>
+    <update date="2005-01-16">
+        <entry>Separated *vec* types definition from declaration</entry>
+        <entry>Added xvec* into xvec2 type conversion</entry>
+        <entry>Updated issue #11</entry>
+        <entry>Added issue #12</entry>
+    </update>
+    <update date="2005-01-15">
+        <entry>Using 'union' for multiple access to *vec* types components</entry>
+        <entry>Added issue #11</entry>
+        <entry>Deleted __*vec1GT following issue #11 guidance</entry>
+        <entry>Closed issue #2</entry>
+    </update>
+    <update date="2005-01-13">
+        <entry>Added function normalize with its tests</entry>
+        <entry>Added function faceforward with its tests</entry>
+    </update>
+    <update date="2005-01-12">
+        <entry>Added function cross with its tests</entry>
+        <entry>Added a function that can determine *vec* types size, and write beyond GLSL 1.051 specs</entry>
+        <entry>Added function lenght with its tests</entry>
+        <entry>Added function distance with its tests</entry>
+        <entry>Added function dot with its tests</entry>
+        <entry>Closed issue #1</entry>
+    </update>
+    <update date="2005-01-10">
+        <entry>Renamed intern types _vec* into _xvec*</entry>
+        <entry>Separated _xvec* types data, operators and accesses</entry>
+        <entry>Added bvec2 type</entry>
+        <entry>Added __bvec1GT type beyond GLSL 1.051 specs</entry>
+    </update>
+    <update date="2005-01-09">
+        <entry>Added types vec2 and ivec2</entry>
+        <entry>Added types vec3 and ivec3</entry>
+        <entry>Added types vec4 and ivec4</entry>
+        <entry>Added types __vec1GT and __ivec1GT, write beyond GLSL 1.051 specs</entry>
+    </update>
+</changelog>

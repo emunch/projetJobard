@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="./news.xsl"?>
+
+<page_news>
+    <about>
+        <paragraph>
+			OpenGL Mathematics (GLM) is a mathematics library for 3D applications based on <link href="http://oss.sgi.com/projects/ogl-sample/registry/ARB/GLSLangSpec.Full.1.10.59.pdf">OpenGL Shading Language</link>(GLSL). 
+        </paragraph>
+        <paragraph>
+			The project's goal is to provide to 3D programmer the same tools when he develops under GPU and CPU. This project wasn't limited by GLSL tools, an extension system based on <link href="http://oss.sgi.com/projects/ogl-sample/registry/doc/GLSLExtensionRules.txt">GLSL extensions development conventions</link> allow to extend GLSL capabilities.
+        </paragraph>
+        <paragraph>
+			GLM is developed under <link href="http://www.gnu.org">GNU LGPL</link>.
+        </paragraph>
+    </about>
+	<news index="0009" date="22-05-2006" title="GLM 0.4.1 released">
+        <redacteur adresse="mailto:contact@g-truc.net">Groove</redacteur>
+		<paragraph>
+		    A GLM update is available. It simply includes some examples for a sweet start with GLM. 
+		</paragraph>
+		<paragraph>
+		    The examples show how to use GLM with OpenGL intermediate mode and OpenGL vertex arrays. Also, they show how to use GLM extensions to replace GLU and OpenGL function witch could slightly increase performances by decreasing the number of OpenGL states changes. 
+		</paragraph>
+    	<source type="Download" adresse="http://prdownloads.sourceforge.net/glf/glm-0.4.1.zip?download">GLM 0.4.1 (zip, 1.6 Mo)</source>
+    	<source type="Download" adresse="http://prdownloads.sourceforge.net/glf/glm-0.4.1.7z?download">GLM 0.4.1 (7z, 521 Ko)</source>
+	</news>
+	<news index="0008" date="17-05-2006" title="GLM 0.4.0 released">
+        <redacteur adresse="mailto:contact@g-truc.net">Groove</redacteur>
+		<paragraph>
+		    This release introduces first GLSL 1.2 features as planed. Also, various new extensions have been added and updated. Finally, it's not anymore required to include windows.h before glm.h when windows.h is required.
+		</paragraph>
+		<paragraph>
+		    The number of features of GLM, including extensions, start to really increase the compilation time. That's why it's recommended to use precompiled headers.
+		</paragraph>
+    	<source type="Download" adresse="http://prdownloads.sourceforge.net/glf/glm-0.4.0.zip?download">GLM 0.4.0</source>
+	</news>
+	<news index="0007" date="23-04-2006" title="Roadmap for the years">
+        <redacteur adresse="mailto:contact@g-truc.net">Groove</redacteur>
+		<paragraph>
+		    Version 0.4 will complete matrices and vectors operators and will add GLSL 1.2 features. First, conversions simplifications will be integrated. Then, 4 per 3 matrices and outer product will be available from extensions. The transpose function is already available from extension.
+		</paragraph>
+		<paragraph>
+		    Version 0.5 will integrate GLSL 1.2 features to GLM core.
+		</paragraph>
+		<paragraph>
+		    Version 0.6 will add swizzle operators in reading and writing. (eg: vec3 v1(1.0, 2.0, 3.0); vec3 v2 = v1.xxx; v1.zyx = v;).
+		</paragraph>
+	</news>
+	<news index="0006" date="22-04-2006" title="GLM 0.3.2 released">
+        <redacteur adresse="mailto:contact@g-truc.net">Groove</redacteur>
+		<paragraph>
+		    This release corrects two main bugs. First, a bug of the imat4 and mat4 division operators and other correct the vectors components access from texture coordinate way.
+		</paragraph>
+    	<source type="Download" adresse="http://prdownloads.sourceforge.net/glf/glm-0.3.2.zip?download">GLM 0.3.2</source>
+	</news>
+	<news index="0005" date="28-03-2006" title="GLM 0.3.1 released">
+        <redacteur adresse="mailto:contact@g-truc.net">Groove</redacteur>
+		<paragraph>
+		    This update adds GCC 4.0 support for MacOS X and Linux and GCC 4.1 under Linux. Also, its provides some optimisations.
+		</paragraph>
+		<paragraph>
+			Further release will prodive GLSL 1.2 compliances.
+		</paragraph>
+    	<source type="Download" adresse="http://prdownloads.sourceforge.net/glf/glm-0.3.1.zip?download">GLM 0.3.1</source>
+	</news>
+	<news index="0004" date="19-02-2006" title="GLM 0.3 released">
+        <redacteur adresse="mailto:contact@g-truc.net">Groove</redacteur>
+		<paragraph>
+		    A new release of GLM is now available. It improves GLSL data type conversion and construction compliance. Also, It's adds extensions like some to manage double-precision and half-precision float numbers. Finally a Doxygen documentation has been added.
+		</paragraph>
+		<paragraph>
+			This new release have been tested under Visual C++ 7.1, Visual C++ 8.0, GCC 3.2.3 et GCC 3.4.2.
+		</paragraph>
+    	<source type="Download" adresse="http://prdownloads.sourceforge.net/glf/glm-0.3.zip?download">GLM 0.3</source>
+    	<source type="Download" adresse="http://prdownloads.sourceforge.net/glf/raytrace-b2.0.zip?download">Raytrace</source>
+    	<source type="Documentation" adresse="../html/index.html">Online documentation</source>
+	</news>
+	<news index="0003" date="06-05-2005" title="GLM 0.2 released">
+        <redacteur adresse="mailto:contact@g-truc.net">Groove</redacteur>
+		<paragraph>
+		    A new release of GLM is now available. A few bugs have been fixed, the portability of GLSL into C++ has been improved, and new experimental extensions have been implemented, enhancing GLSL features.
+		</paragraph>
+		<paragraph>
+			Project now supports quaternions, adds new features to handle colors, vectors and matrices. For example, GLM allows base colors changing, vector projected operations, and 2D/3D transforms.
+		</paragraph>
+		<paragraph>
+			To demo the features of this new version, a sample program is included. It is a simple Ray Tracer supporting reflected and refracted rays, three lights types (point, directionnal and spot), two objects types (sphere, plan), using all of the GLM possibilities.
+		</paragraph>
+	</news>
+	<news index="0002" date="04-05-2005" title="English pages">
+        <redacteur adresse="mailto:contact@g-truc.net">Groove</redacteur>
+		<paragraph>
+		    The english section of this site is now available.
+		</paragraph>
+	</news>
+	<news index="0001" date="21-02-2005" title="GLM 0.1 is available">
+        <redacteur adresse="mailto:contact@g-truc.net">Groove</redacteur>
+		<paragraph>
+		    This is the first public availability of GLM. This library supports part of GLSL specifications : All vectors and matrices types, and all the operators and associated functions.
+		</paragraph>
+		<paragraph>
+		    For now, there isn't detailed documentation, but you can freely have a look on GLSL specifications. Consider any incoherence with GLM as an error. Keep in mind the library is included in the namespace "glm".
+		</paragraph>
+		<paragraph>
+		    This project is multi platform and was successfully tested under Visual C++ 7.1, MinGW 3.4 and GCC 3.4.
+		</paragraph>
+    	<source type="Download" adresse="http://prdownloads.sourceforge.net/glf/glm-0.1-ur.zip?download">GLM 0.1 User Release</source>
+    	<source type="Download" adresse="http://prdownloads.sourceforge.net/glf/glm-0.1-uc.zip?download">GLM 0.1 Contributor Release</source>
+    	<source type="Documentation" adresse="http://oss.sgi.com/projects/ogl-sample/registry/ARB/GLSLangSpec.Full.1.10.59.pdf">GLSL 1.10.59 specifications</source>
+	</news>
+</page_news>

@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="./changelog.xsl"?>
+
+<changelog>
+    <update date="2006-05-22">
+        <entry>Ajout de 4 exemples d'utilisation avec OpenGL sous Windows et Linux</entry>
+    </update>
+    <update date="2006-05-16">
+        <entry>Il n'est plus nécessaire windows.h avant glm.h si windows.h est nécessaire</entry>
+    </update>
+    <update date="2006-05-04">
+        <entry>Améliore les conversions de _xvec3</entry>
+        <entry>Améliore les conversions de _xvec2</entry>
+        <entry>Ajout les opérateurs cocktails du coté gauche à _xvec2</entry>
+        <entry>Améliore les conversions de _bvec4</entry>
+        <entry>Améliore les conversions de _bvec3</entry>
+        <entry>Améliore les conversions de _bvec2</entry>
+    </update>
+    <update date="2006-04-28">
+        <entry>Ajout des structures _xref* pour l'implémentation les opérateurs cocktails</entry>
+        <entry>Separe les types bvec* et xvec* dans différents fichiers</entry>
+        <entry>Mise à jours du code des fonctions du core</entry>
+    </update>
+    <update date="2006-04-22">
+        <entry>Corrige l'accès aux composantes par coordonnées de texture</entry>
+        <entry>Ajout de la suggestion d'extension GLM_GTX_mul</entry>
+        <entry>Ajout de la suggestion d'extension GLM_GTX_inertia</entry>
+    </update>
+    <update date="2006-04-21">
+        <entry>Ajout des opérateurs swizzle au vec2</entry>
+        <entry>Améliore les conversions des _xvec4</entry>
+    </update>
+    <update date="2006-04-20">
+        <entry>Mise à jour de GLM_GTX_quaterion, ajout des fonctions log et exp</entry>
+        <entry>Ajout de la suggestion d'extension GLM_GTX_matrix_major_storage</entry>
+    </update>
+    <update date="2006-04-19">
+        <entry>Réorganise le code des types</entry>
+		<entry>Compléte les operateurs d'additions et de soustractions des vecteurs</entry>
+    </update>
+	<update date="2006-04-18">
+		<entry>Compléte les operateurs d'additions et de soustractions des matrices</entry>
+		<entry>Optimise les opérateurs d'increments et de décréments</entry>
+	</update>
+	<update date="2006-04-17">
+		<entry>Corrige la division de _xmat4</entry>
+	</update>
+	<update date="2006-03-30">
+		<entry>Ajout de la suggestion d'extension GLM_GTX_outer_product</entry>
+	</update>
+	<update date="2006-03-27">
+		<entry>Ajout du support de Linux sous GCC 4.0 et 4.1</entry>
+	</update>
+	<update date="2006-03-26">
+		<entry>Optimisation des opérateurs d'incrément et de décrément</entry>
+	</update>
+	<update date="2006-03-20">
+		<entry>Ajout du support de MacOS X sous GCC 4.0</entry>
+	</update>
+	<update date="2006-02-19">
+		<entry>Ajout de la suggestion d'extension 27 : GLM_GTX_extend</entry>
+		<entry>Ajout de la suggestion d'extension 28 : GLM_GTX_euler_angles</entry>
+		<entry>Ajout d'une documentation Doxygen.</entry>
+	</update>
+	<update date="2006-01-30">
+		<entry>Optimisation de l'implémentation de GLM_GTX_integer</entry>
+	</update>
+	<update date="2006-01-27">
+		<entry>Supression des conversions explicites entre tableau et type de GLM pour éviter des conversions indésirés</entry>
+	</update>
+	<update date="2006-01-16">
+		<entry>Correction d'erreurs</entry>
+		<entry>Amélioration des conversions entre types</entry>
+		<entry>Ajout de l'extension 25 : GLM_GTX_vector_access</entry>
+		<entry>Ajout de l'extension 26 : GLM_GTX_random</entry>
+	</update>
+	<update date="2006-01-13">
+		<entry>Correction d'erreurs</entry>
+	</update>
+	<update date="2006-01-10">
+		<entry>Mise à jour de l'extension GLM_GTX_integer</entry>
+	</update>
+	<update date="2006-01-09">
+		<entry>Ajout de la suggestion d'extension 24 : GLM_GTX_fast_exponential</entry>
+	</update>
+	<update date="2006-01-08">
+		<entry>Optimisation de la copie des classes _xvec*</entry>
+	</update>
+	<update date="2006-01-07">
+		<entry>Ajout de la suggestion d'extension 23 : GLM_GTX_fast_trigonometry</entry>
+		<entry>Ajout de la function factorial à l'extension GLM_GTX_integer</entry>
+	</update>
+	<update date="2006-01-05">
+		<entry>Ajout de la suggestion d'extension 21 : GLM_GTX_half</entry>
+		<entry>Optimisation de la fonction normalize()</entry>
+		<entry>Optimisation globale pour la phase de debugging</entry>
+		<entry>Ajout de la suggestion d'extension 22 : GLM_GTX_integer</entry>
+		<entry>Optimisation de la fonction clamp()</entry>
+	</update>
+	<update date="2006-01-04">
+		<entry>Ajout de la suggestion d'extension 19 : GLM_GTX_fast_square_root</entry>
+		<entry>Ajout de la suggestion d'extension 20 : GLM_GTX_inverse_transpose</entry>
+		<entry>Corrige l'absence de l'operation vec4 * mat4</entry>
+	</update>
+	<update date="2005-12-23">
+		<entry>Reorganisation des extensions.</entry>
+		<entry>Correction d'un bug dans un constructeur de vec2.</entry>
+	</update>
+	<update date="2005-11-22">
+		<entry>Mise à jour de l'extension GLM_GTX_length2.</entry>
+		<entry>Changement de nom de GLM_GTX_length2 en GLM_GTX_norm.</entry>
+	</update>
+	<update date="2005-11-12">
+		<entry>Correction de bugs liés à l'extension GLM_GTX_quaterion.</entry>
+	</update>
+	<update date="2005-11-09">
+		<entry>Mise à jour de l'extension GLM_GTX_projection.</entry>
+	</update>	
+	<update date="2005-10-30">
+		<entry>Ajout de la suggestion d'extension 18 : GLM_GTX_transform2</entry>
+	</update>
+	<update date="2005-09-28">
+		<entry>Mise à jour pour GCC 4.0.</entry>
+	</update>
+	<update date="2005-08-12">
+		<entry>Correction d'un bug de normalisation de la fonction glm::LookAtGTX.</entry>
+	</update>
+	<update date="2005-07-15">
+		<entry>Ajout de conversion de tableau vers les types de GLM.</entry>
+	</update>
+	<update date="2005-07-02">
+		<entry>Ajout de la suggestion d'extension 17 : GL_GTX_euler_angles</entry>
+	</update>
+	<update date="2005-06-24">
+		<entry>Ajout de la suggestion d'extension 16 : GLM_GTX_matrix_selection.</entry>
+		<entry>Support de l'extension GLM_GTX_matrix_selection.</entry>
+	</update>
+	<update date="2005-06-22">
+		<entry>Mise à jour de l'extension GLM_GTX_projection.</entry>
+	</update>
+	<update date="2005-06-21">
+		<entry>Ajout de la suggestion d'extension 15 : GLM_GTX_projection.</entry>
+	</update>
+	<update date="2005-06-09">
+		<entry>Correction du bug de rotateGTX avec un quaternion.</entry>
+		<entry>Correction du produit entre une matrice et un vecteur.</entry>
+		<entry>Possibilité d'utiliser de vecteurs pour indiquer l'axe de transformations.</entry>
+		<entry>Mise à jour de l'extension GLM_GTX_quaternion, fonctions de conversions entre matrice et quaternion transformées en contructeurs.</entry>
+	</update>
+	<update date="2005-05-05">
+		<entry>Support de l'extension GLM_GTX_quaternion.</entry>
+	</update>
+	<update date="2005-05-02">
+		<entry>Support des transforamtions 2D de GLM_GTX_transform.</entry>
+	</update>
+	<update date="2005-05-01">
+		<entry>Support des transforamtions 3D de GLM_GTX_transform.</entry>
+	</update>
+	<update date="2005-04-29">
+		<entry>Mise à jour de la suggestion d'extension 2 : GLM_GTX_transform.</entry>
+	</update>
+	<update date="2005-04-23">
+		<entry>Ajout de la suggestion d'extension 14 : GLM_GTX_vector_comp_mult.</entry>
+		<entry>Support de l'extension GLM_GTX_vector_comp_mult.</entry>
+	</update>
+	<update date="2005-04-22">
+		<entry>Ajout de la suggestion d'extension 13 : GLM_GTX_color_space.</entry>
+		<entry>Support de l'extension GLM_GTX_color_space.</entry>
+		<entry>Support de l'extension GLM_GTX_double.</entry>
+	</update>
+	<update date="2005-04-10">
+		<entry>Surcharge des fonctions GLSL utilisées par des extentions au lieu d'en créer de nouvelles.</entry>
+	</update>
+	<update date="2005-04-08">
+		<entry>Ajout de la suggestion d'extension 11 : GLM_GTX_optimum_pow.</entry>
+		<entry>Ajout de la suggestion d'extension 12 : GLM_GTX_double.</entry>
+	</update>
+	<update date="2005-04-03">
+		<entry>Mise à jour de la suggestion d'extension 8 : GLM_GTX_matrix_cross_product.</entry>
+		<entry>Support de l'extension GLM_GTX_matrix_cross_product.</entry>
+		<entry>Ajout de la suggestion d'extension 9 : GLM_GTX_projection.</entry>
+		<entry>Ajout de la suggestion d'extension 10 : GLM_GTX_perpendicular.</entry>
+		<entry>Support de l'extension GLM_GTX_projection.</entry>
+		<entry>Support de l'extension GLM_GTX_perpendicular.</entry>
+		<entry>Nouvelle organisation des extensions.</entry>
+	</update>
+	<update date="2005-03-27">
+		<entry>Ajout du produit *vec* par mat*.</entry>
+		<entry>Mise à jour de la suggestion d'extension 4 : GLM_GTX_determinant.</entry>
+		<entry>Mise à jour de la suggestion d'extension 5 : GLM_GTX_inverse.</entry>
+		<entry>Mise à jour de la suggestion d'extension 6 : GLM_GTX_length2.</entry>
+		<entry>Mise à jour de la suggestion d'extension 7 : GLM_GTX_orthonormalize.</entry>
+		<entry>Support de l'extension GLM_GTX_determinant.</entry>
+		<entry>Support de l'extension GLM_GTX_inverse.</entry>
+		<entry>Support de l'extension GLM_GTX_length2.</entry>
+		<entry>Support de l'extension GLM_GTX_orthonormalize.</entry>
+	</update>
+	<update date="2005-03-21">
+		<entry>Ajout du bug 7 : Constructeurs de vecteurs non conforme.</entry>
+		<entry>Mise à jour de la problématique 13 : Seul l'ARB peut proposer des extensions ajoutant de nouveaux opérateurs.</entry>
+	</update>
+	<update date="2005-03-13">
+		<entry>Ajout de la suggestion d'extension 7 : GLM_GTX_orthonormalize.</entry>
+		<entry>Ajout de la suggestion d'extension 8 : GLM_GTX_matrix_cross_product.</entry>
+		<entry>Mise à jour de la problématique 10 : Utilisation de fonctions membres template.</entry>
+		<entry>Mise à jour des types *vec* selon la problématique 10.</entry>
+	</update>
+	<update date="2005-03-06">
+		<entry>Gestion du bug 2 avec des '#error'.</entry>
+	</update>
+	<update date="2005-03-05">
+		<entry>Mise à jour de la problématique 4.</entry>
+	</update>
+	<update date="2005-03-04">
+		<entry>Mise à jour de la problématique 13.</entry>
+		<entry>Mise à jour de la problématique 8.</entry>
+		<entry>Mise à jour de la problématique 6.</entry>
+		<entry>Mise à jour de la problématique 4.</entry>
+	</update>
+	<update date="2005-03-03">
+		<entry>Fusion des bugs 2 et 5.</entry>
+		<entry>Mise à jour de l'opérateur / des types vec*, support du la division de deux vecteurs, division terme à terme</entry>
+	</update>
+	<update date="2005-02-28">
+		<entry>Mise à jour de la suggestion d'extension 3 : GLM_GTX_transpose</entry>
+		<entry>Support de l'extension GLM_GTX_transpose</entry>
+		<entry>Correction du constructeur des types mat* qui prennent un scalaire en paramètre</entry>
+	</update>
+	<update date="2005-02-27">
+		<entry>Correction du produit des types mat* par un scalaire</entry>
+	</update>
+	<update date="2005-02-25">
+		<entry>Mise à jour de la fonction 'not'</entry>
+		<entry>Definition d'identifiants suivant les compilateurs</entry>
+		<entry>Ajout de la suggestion d'extension 6 : GLM_GTX_length2</entry>
+		<entry>Optimisation de l'opérateur de division du type mat3</entry>
+	</update>
+	<update date="2005-02-21">
+		<entry>Publication de GLM 0.1</entry>
+	</update>
+	<update date="2005-02-18">
+		<entry>Mise à jour de la problèmatique 4</entry>
+		<entry>Mise à jour de la problèmatique 6</entry>
+		<entry>Mise à jour de la problèmatique 9</entry>
+		<entry>Mise à jour de la problèmatique 12</entry>
+		<entry>Mise à jour de la problèmatique 13</entry>
+		<entry>Mise à jour de la numérotation des problématiques</entry>
+	</update>
+	<update date="2005-02-17">
+		<entry>Mise à jour de l'opérateur + des types vec*, support de la somme d'un vecteur et d'un scalaire, somme terme à terme</entry>
+		<entry>Mise à jour de l'opérateur - des types vec*, support de la différence d'un vecteur et d'un scalaire, différence terme à terme</entry>
+		<entry>Mise à jour de l'opérateur * des types vec*, support du produit de deux vecteurs, produit terme à terme</entry>
+		<entry>Suppression de la problématique 11, problématique éronée</entry>
+	</update>
+	<update date="2005-02-15">
+		<entry>Suppression de la suggestion d'extension 6 car la fonction refract est définit par la version 1.10.59 des spécifications de GLSL</entry>
+		<entry>Mise à jour des tests de la fonction reflect</entry>
+		<entry>Ajout de la fonction refract et ses tests</entry>
+		<entry>Utilisation du nom 'genType' comme typename pour les templates des fonctions</entry>
+		<entry>Ajout du bug 5</entry>
+		<entry>Mise à jout de la fonction sqrt</entry>
+		<entry>Ajout de la fonction log et ses tests</entry>
+		<entry>Ajout de la fonction exp et ses tests</entry>
+		<entry>Ajout de la fonction log2 et ses tests</entry>
+		<entry>Mise à jour de la fonction cross</entry>
+		<entry>Mise à jour de l'implémentation des données des types bvec*</entry>
+		<entry>Ajout du bug 6</entry>
+	</update>
+	<update date="2005-02-14">
+		<entry>Mise à jour de la problématique 13</entry>
+		<entry>Conversion des fichiers textes en fichier XML</entry>
+		<entry>Modification de la hiérarchie des fichiers</entry>
+	</update>
+	<update date="2005-02-13">
+		<entry>Mise à jour de la fonction clamp</entry>
+		<entry>Ajout de la fonction noise1 et ses tests</entry>
+		<entry>Ajout de la fonction noise2 et ses tests</entry>
+		<entry>Ajout de la fonction noise3 et ses tests</entry>
+		<entry>Ajout de la fonction noise4 et ses tests</entry>
+	</update>
+	<update date="2005-02-08">
+		<entry>Amélioration de l'opérateur de division du type mat4</entry>
+		<entry>Ajout de la fonction sqrt et ses tests</entry>
+		<entry>Ajout de la fonction inversesqrt et ses tests</entry>
+		<entry>Ajout de la fonction exp2 et ses tests</entry>
+		<entry>Ajout de la fonction log2 et ses tests</entry>
+	</update>
+	<update date="2005-02-07">
+		<entry>Modification de l'implémentation des contructeurs des types *vec*, choix de l'initialisation au lieu de l'affectation</entry>
+		<entry>Ajout de la fonction reflect et ses tests</entry>
+		<entry>Mise à jour de la fonction tan</entry>
+		<entry>Correction de l'opérateur * du type mat4</entry>
+	</update>
+	<update date="2005-02-05">
+		<entry>Ajout de la suggestion d'extension 5 : GLM_GTX_refract</entry>
+	</update>
+	<update date="2005-02-03">
+		<entry>Ajout d'un constructeur par défaut pour les types mat*</entry>
+	</update>
+	<update date="2005-02-02">
+		<entry>Ajout de l'opérateur de produit d'un type mat2 et d'un type vec2</entry>
+		<entry>Ajout de l'opérateur de produit d'un type mat3 et d'un type vec3</entry>
+		<entry>Ajout de l'opérateur de produit d'un type mat4 et d'un type vec4</entry>
+	</update>
+	<update date="2005-02-01">
+		<entry>Ajout de la suggestion d'extension 3 : GLM_GTX_transpose</entry>
+		<entry>Ajout de la suggestion d'extension 4 : GLM_GTX_determinant</entry>
+		<entry>Ajout de la suggestion d'extension 5 : GLM_GTX_inverse</entry>
+		<entry>Ajout de l'opérateur de division pour les types mat*</entry>
+		<entry>Amélioration de la conception des types *vec*</entry>
+		<entry>Amélioration de la conception des types *mat*</entry>
+	</update>
+	<update date="2005-01-31">
+		<entry>Mise à jour du bug 3</entry>
+		<entry>Mise à jour de la problématique 10</entry>
+		<entry>Ajout de la fonction matrixCompMult et ses tests</entry>
+		<entry>Mise à jour des operateurs d'accès constant des types mat*</entry>
+		<entry>Ajout du bug 4 : Problème de conversion entre type deux *vec* différents</entry>
+	</update>
+	<update date="2005-01-30">
+		<entry>Ajout du bug 1 : Sélection multiple de composantes impossible</entry>
+		<entry>Ajout du bug 2 : Certaines conversions de types *vec* non disponible</entry>
+		<entry>Ajout du bug 3 : 'not' est un mot clé du C++ ISO</entry>
+		<entry>Ajout de l'opérateur * pour deux types mat3</entry>
+		<entry>Ajout de l'opérateur * pour deux types mat4</entry>
+		<entry>Mise à jour des types mat*</entry>
+		<entry>Ajout de la suggestion d'extension 1 : GLM_GTX_quaternion</entry>
+		<entry>Ajout de la suggestion d'extension 2 : GLM_GTX_transform</entry>
+	</update>
+	<update date="2005-01-27">
+		<entry>Ajout du type mat2</entry>
+		<entry>Ajout de l'opérateur * pour deux types mat2</entry>
+		<entry>Ajout de la problématique 14</entry>
+		<entry>Ajout de la problématique 15</entry>
+		<entry>Ajout du type mat3</entry>
+		<entry>Ajout du type mat4</entry>
+	</update>
+	<update date="2005-01-26">
+		<entry>Ajout de la fonction mix et ses tests</entry>
+		<entry>Ajout de la fonction step et ses tests</entry>
+		<entry>Ajout de la fonction smoothstep et ses tests</entry>
+		<entry>Mise à jour de la problématique 10</entry>
+		<entry>Mise à jour de la problématique 12</entry>
+		<entry>Mise à jour de la problématique 8</entry>
+		<entry>Ajout d'une déclaration oubliée du type bvec4</entry>
+		<entry>Ajout de la fonction lessThan et ses tests</entry>
+		<entry>Ajout de la fonction lessThanEqual et ses tests</entry>
+		<entry>Ajout de la fonction greaterThan et ses tests</entry>
+		<entry>Ajout de la fonction greaterThanEqual et ses tests</entry>
+		<entry>Ajout de la fonction equal et ses tests</entry>
+		<entry>Ajout de la fonction notEqual et ses tests</entry>
+		<entry>Ajout de la fonction any et ses tests</entry>
+		<entry>Ajout de la fonction all et ses tests</entry>
+		<entry>Ajout de la fonction not et ses tests</entry>
+	</update>
+	<update date="2005-01-24">
+		<entry>Ajout de la fonction fract et ses tests</entry>
+		<entry>Ajout de la fonction mod et ses tests</entry>
+		<entry>Ajout de la fonction clamp et ses tests</entry>
+	</update>
+	<update date="2005-01-23">
+		<entry>Ajout de la fonction mod et ses tests</entry>
+		<entry>Ajout de la fonction abs et ses tests</entry>
+		<entry>Ajout de la fonction sign et ses tests</entry>
+		<entry>Ajout de la fonction floor et ses tests</entry>
+		<entry>Ajout de la fonction ceil et ses tests</entry>
+		<entry>Ajout de la fonction min et ses tests</entry>
+		<entry>Ajout de la fonction max et ses tests</entry>
+	</update>
+	<update date="2005-01-22">
+		<entry>Mise à jour de la problématique 13</entry>
+		<entry>Ajout de l'espace de nom temporairement nommée 'glm'</entry>
+		<entry>Ajout de la fonction pow et ses tests</entry>
+	</update>
+	<update date="2005-01-19">
+		<entry>Mise à jour des tests de la fonction sin</entry>
+		<entry>Amélioration des fonctions trigonometriques</entry>
+		<entry>Amélioration des fonctions géométriques</entry>
+	</update>
+	<update date="2005-01-18">
+		<entry>Ajout d'un constructeur aux types xvec* ne prenant qu'un scalaire en paramètre</entry>
+		<entry>Ajout d'une conversion des types xvec* en xvec3</entry>
+		<entry>Ajout d'une conversion des types xvec* en xvec4</entry>
+		<entry>Ajout d'une conversion des types bvec* en bvec2</entry>
+		<entry>Ajout d'une conversion des types bvec* en bvec3</entry>
+		<entry>Ajout d'une conversion des types bvec* en bvec4</entry>
+		<entry>Ajout de la fonction sin et ses tests</entry>
+		<entry>Ajout de la fonction cos et ses tests</entry>
+		<entry>Ajout de la fonction tan et ses tests</entry>
+		<entry>Ajout de la fonction asin et ses tests</entry>
+		<entry>Ajout de la fonction acos et ses tests</entry>
+		<entry>Ajout de la fonction atan et ses tests</entry>
+		<entry>Ajout de la problématique 13</entry>
+	</update>
+	<update date="2005-01-17">
+		<entry>Ajout de la fonction radians et ses tests</entry>
+		<entry>Ajout de la fonction degrees et ses tests</entry>
+		<entry>Ajout de la problématique 9</entry>
+	</update>
+	<update date="2005-01-16">
+		<entry>Séparation de la définition et de la déclaration des types *vec*</entry>
+		<entry>Ajout d'une conversion des types xvec* en xvec2</entry>
+		<entry>Mise à jour de la problématique 11</entry>
+		<entry>Ajout de la problématique 12</entry>
+	</update>
+	<update date="2005-01-15">
+		<entry>Utilisation de 'union' pour les accès multiples au composantes des types *vec*</entry>
+		<entry>Ajout de la problématique 11</entry>
+		<entry>Suppression du type __*vec1GT comformément à la problématique 11</entry>
+		<entry>Fermeture de la problématique 2</entry>
+	</update>
+	<update date="2005-01-13">
+		<entry>Ajout de la fonction normalize et ses tests</entry>
+		<entry>Ajout de la fonction faceforward et ses tests</entry>
+	</update>
+	<update date="2005-01-12">
+		<entry>Ajout de la fonction cross et ses tests</entry>
+		<entry>Add d'une fonction permettant de déterminer la taille des types *vec*, écriture en dehors des spécifications 1.051 de GLSL ...</entry>
+		<entry>Ajout de la fonction length et ses tests</entry>
+		<entry>Ajout de la fonction distance et ses tests</entry>
+		<entry>Ajout de la fonction dot et ses tests</entry>
+		<entry>Fermeture de la problématique 1</entry>
+	</update>
+	<update date="2005-01-10">
+		<entry>Renommage des types internes _vec* en _xvec*</entry>
+		<entry>Séparation des données, des opérateurs et des accès des types _xvec*</entry>
+		<entry>Ajout du type bvec2</entry>
+		<entry>Ajout du type __bvec1GT en dehors des spécifications de GLSL 1.051</entry>
+	</update>
+	<update date="2005-01-09">
+		<entry>Ajout des types vec2 et ivec2</entry>
+		<entry>Ajout des types vec3 et ivec3</entry>
+		<entry>Ajout des types vec4 et ivec4</entry>
+		<entry>Ajout des types __vec1GT et __ivec1GT, écriture en dehors des spécification de GLSL 1.051 ...</entry>
+	</update>
+</changelog>

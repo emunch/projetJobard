@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="./issue.xsl"?>
+
+<issues>
+    <issue number="10" title="De nombreux outils très utils manquent dans GLSL, est il possible d'en ajouter ?" statue="Particiellement résolue" date="2005-03-21">
+        <entry title="DISCUTION">IL est vrai que GLSL n'est pas une bibliothèque mathématique ultime. Par exemple au niveau des opérations sur les matrices, les spécifications sont très limités. Ainsi, il n'y a pas de fonctions pour obtenir le déterminant, l'inverse ou encore la transposée d'une matrice. De plus, il y a peu de types vecteurs et matrices différents et pas de quaternions.</entry>
+        <entry title="PROPOSAL">Pourquoi ne pas proposer tous ces manques sous forme d'extensions ? Elle sera développé à partir des convensions de GLSL ce qui pourrait par exemple donnée l'extension GLM_GTX_quaternion, elle définirait le type __quatGT et la fonction conjugateGT.</entry>
+        <entry title="PROPOSAL">Les extensions seraient disponibles depuis un fichier distinct de celui dédié au core de la bibliothèque, le fichier glmext.h.</entry>
+        <entry title="PROPOSAL">Il serait intéressant de proposer des implémentations des extensions de GLM directement en GLSL afin de favoriser la portabilité. Voir avec opportunisme, de proposer des extensions à l'ARB.</entry>
+    </issue>
+    <issue number="9" title="Faut il inclure GLM dans un espace de nom ?" statue="Non resolue" date="2005-02-18">
+        <entry title="DISCUTION">L'utilisation d'un espace de nom permet de prévenir les problèmes de collisions de noms avec d'autres bibliothèques comme la STL. GLSL dispose du mot clé réservé 'namespace' mais ne le définit pas. OpenGL utilise une technique C pour la gestion des espaces de noms avec le préfixe 'gl'. Quel nom faut t'il donner à cette espace de nom ? 'gl', 'glsl', 'glm' or 'sl'. Qu'elle est la meilleur solution ? Les espaces de noms à la manière du C ou du C++ ?</entry>
+        <entry title="DISCUTION">Le bug 3 indique que 'not' est un mot clé C++. L'utilisation des espaces de noms C résoud alors ce bug mais GLSL a été construit à partir du C mais dans une logique orienté vers le C++.</entry>
+    </issue>
+    <issue number="8" title="Faut il tenir compte de l'API OpenGL ?" statue="Résolue" date="2005-03-04">
+        <entry title="DISCUTION">L'intéraction avec OpenGL n'est pas le but en soit de GLM. Pourtant, il ne faut pas perdre de vue que GLM doit pouvoir être utilisable facilement avec OpenGL et certaines possibilités pourrait être bienvenu. Par exemple, l'utilisation du type vec3 avec la fonction Vertex3fv pourrait simplifier et optimiser le programme. Enfin, d'un point de vue sémentique, le vec3 est plus corrérant et plus robuste qu'une adresse sur un potentiel tableau de trois float.</entry>
+        <entry title="RESOLUTION">S'il est possible de facilité l'interopérabilité de GLM et d'OpenGL alors ce travail est recommandé si la sémentique est correcte. GLM doit également rester indépendante d'OpenGL.</entry>
+    </issue>
+    <issue number="7" title="Comment prendre en compte les mots clés réservés ?" statue="Particiellement résolue" date="2005-01-26">
+        <entry title="DISCUTION">Les spécifications de GLSL précise la liste de mots clés reservés mais non implémenté. Leur utilisation doit retourner une erreur. Certains existent déjà dans C++.</entry>
+        <entry title="RESOLUTION">GLM ne peut qu'autoriser les mots clés réservés du C++. Les autres doivent être indéfinit pour que le compilateur retourne une erreur.</entry>
+    </issue>
+    <issue number="6" title="Comment gérer les qualificatifs de GLSL ?" statue="Particiellement résolue" date="2005-03-04">
+        <entry title="DISCUTION">GLSL définit six types de qualificatifs de variables: const, varying, uniform, attrib, in, out, inout.</entry>
+        <entry title="RESOLUTION">Les variables 'const' ne sont utilisables qu'en local dans un shader. Elles sont disponibles pour les vertex et fragment shaders. Les 'const' de GLSL sont équivalent au 'static const' du langage C++, c'est à dire que la variable n'existe qu'à l'intérieur d'une unité de compilation.(un .o sous GCC)</entry>
+        <entry title="RESOLUTION">Les variables varying propose une interface de communication entre le vertex et le fragment shader. Les variables uniform et attrib sont un moyen de communication entre le programme C/C++ et les shaders, les varying n'ont donc aucune utilité dans le programme C++. Ce qualificatif n'est donc pas autorisé</entry>
+        <entry title="SUGGESTION">Certains programmers utilisent déjà les qualificatifs in, out et inout pour leurs valeurs sémantiques. Ils les définissent comme des '#define' vide.</entry>
+        <entry title="DISCUTION">Il semble difficile de concerver la même syntaxe que GLSL pour les variables uniform et attrib bien que cette notion semble intéressante. Pourquoi ne pas simplement conservé uniquement leurs valeurs sémentiques ?</entry>
+    </issue>
+    <issue number="5" title="Faut il tenir compte des variables intégrés ?" statue="Résolue" date="2005-01-13">
+        <entry title="SUGGESTION">Tous les variables intégrées correspondent aux variables d'états d'OpenGL. Elles sont donc toutes accéssibles à partir de l'API d'OpenGL.</entry>
+    </issue>
+    <issue number="4" title="Faut il tenir compte des types sampler* ?" statue="Résolue" date="2005-03-05">
+        <entry title="DISCUTION">Les types sampler* proviennent de l'extension GL_ARB_multitexture. Leurs valeurs correspondent à une unité de textures.</entry>
+        <entry title="SUGGESTION">Un type sampler offrirai une valeur sémentique additionnelle.</entry>
+        <entry title="SUGGESTION">Non, ce n'est pas l'objectif de GLM.</entry>
+    </issue>
+    <issue number="3" title="Comment gérer les accès spécifiques aux composantes des types *vec* ?" statue="Fermée" date="2005-01-22">
+        <entry title="DISCUTION">GLSL permet un accès à plusieurs composantes en même temps. De plus, GLSL laisse la possibilité à l'utilisateur d'ordonner les compossantes comme il le souhait. Pour implémenter, une telle possibilité il faudrait intégrer 4² * 3 * 2 = 96 fonctions pour le type vec4, par exemple. 4 : Le nombre de composantes. 3: Le nombre de types d'accès. 2: un accès en lecture seul et un accès en écriture.</entry>
+        <entry title="RESOLUTION">Une méthode a été trouvé basé sur les reférences. Cependant, elle implique l'utilisation d'un grand nombre de fonctions mais elle permet de parfaitement satisfaire les spécifications de GLSL. Cette fonctionnalité sera intégré dans les prochaines versions.</entry>
+    </issue>
+    <issue number="2" title="Comment accéder aux composantes des types *vec* ?" statue="Fermée" date="2005-01-15">
+        <entry title="DISCUTION">GLSL permet un accès à une composante avec plusieurs noms différents, d'où la notion de composante. Par exemple : La première composante d'un vec3 est accécible avec .x, .r ou .s.</entry>
+        <entry title="PROPOSAL">Une possibilité serait de créer trois fonctions pour chaque composante.</entry>
+        <entry title="PROPOSAL">Une autre serait d'utiliser le mot clé "union".</entry>
+        <entry title="RESOLUTION">La première solution permet de contenir les valeurs des compossantes dans un tableau privé des classes cependant mais dans ce cas il faut utiliser l'opérateur [] surchargé pour accéder aux valeurs et/ou des fonctions par composante ce qui n'est pas conforme aux spécifications de GLSL. La seconde respect les règles de GLSL mais les composantes sont publiques. Ce n'est pas un réel problème dans ce cas donc cette deusième solution est validée.</entry>
+    </issue>
+    <issue number="1" title="Comment considérer les fonctions dédiés aux fragments shaders et la fonction ftransform ?" statue="Fermée" date="2005-01-12">
+        <entry title="RESOLUTION">Les spécifications de GLSL précisent que les 'fragment processing functions' ne sont dispoble que pour les fragment shaders et que la fonction ftransform n'est disponible que pour les vertex shaders. Le programme C/C++ doit être considéré comment un troisème type de programmes donc ces fonctions ne sont pas disponibles.</entry>
+    </issue>
+</issues>

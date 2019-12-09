@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="./link.xsl"?>
+
+<links>
+    <link name="OpenGL.org" link="http://www.opengl.org">
+        Le site officiel d'OpenGL. On y retrouve les spécifications d'OpenGL, des news et beaucoup d'autres informations.
+    </link>
+    <link name="OpenGL Registry" link="http://oss.sgi.com/projects/ogl-sample/registry">
+        La page qui contient toutes les spécifications des extensions d'OpenGL.
+    </link>
+    <link name="OpenGL 2.0 Specification" link="http://www.opengl.org/documentation/specs/version2.0/glspec20.pdf">
+        La spécification d'OpenGL 2.0.
+    </link>
+    <link name="OpenGL Shading Language Specification" link="http://oss.sgi.com/projects/ogl-sample/registry/ARB/GLSLangSpec.Full.1.10.59.pdf">
+        La spécification d'OpenGL Shading Language
+    </link>
+    <link name="How to create extensions ?" link="http://oss.sgi.com/projects/ogl-sample/registry/doc/rules.html">
+        Un document qui explique comment créer une extension OpenGL.
+    </link>
+    <link name="Extension template" link="http://oss.sgi.com/projects/ogl-sample/registry/doc/template.txt">
+        Un support commenté de spécification d'extensions.
+    </link>
+    <link name="Extension example" link="http://oss.sgi.com/projects/ogl-sample/registry/doc/fog_coord.txt">
+        Un exemple de référence de spécification d'extensions.
+    </link>
+    <link name="OpenGL syntax rules" link="http://oss.sgi.com/projects/ogl-sample/registry/doc/syntaxrules.txt">
+        Un document qui explique la syntaxe de l'API OpenGL. Ce document contient toute les abbréviations.
+    </link>
+    <link name="GLSL Extension conventions" link="http://oss.sgi.com/projects/ogl-sample/registry/doc/GLSLExtensionRules.txt">
+        Un document qui pose les conventions pour l'écriture d'extensions de GLSL. Ces règles forment la base du système d'extensions de GLM.
+    </link>
+</links>

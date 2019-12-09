@@ -1,0 +1,121 @@
+/*
+Principale
+*/
+
+table.principale
+{
+	background-color:#ff8000;
+	border-style:none;
+	border-width:0px;
+	border-spacing:0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	width:100%;
+}
+
+tr.principale
+{
+	background-color:#ff8000;
+	border-style:none;
+	border-width:0px;
+	border-spacing:0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;	
+}
+
+div.title
+{
+    text-align:center;
+    font-size:48px;
+    border-style:solid;
+    border-width:1px;
+}
+
+div.title2
+{
+    text-align:left;
+    font-size:16px;
+    font-weight:bolder;
+}
+
+div.title3
+{
+    text-align:center;
+    font-size:16px;
+    border-style:none;
+    border-width:1px;
+}
+
+div.menu1
+{
+    text-align:center;
+    font-size:16px;
+    font-weight:bolder;
+}
+
+div.menu2
+{
+    text-align:center;
+    font-size:16px;
+}
+
+img.menu-img
+{
+    text-align:center;
+    font-size:16px;
+    border-color:#000000;
+    border-style:solid;
+    border-width:1px;    
+}
+
+div.paragraph
+{
+    text-indent:32px;   
+}
+
+td.page
+{
+    vertical-align:top;
+}
+
+td.menu
+{
+    vertical-align:top;
+    text-align:right;
+    border-width:1px;
+    border-right-style:solid;
+    border-color:#000000;
+    width:160px;
+}
+
+a.menu
+{
+    color:#000000;    
+}
+
+a
+{
+    color:#000000;    
+}
+
+div.issue-content
+{
+    text-indent:32px;   
+}
+
+div.issue-title
+{
+    font-weight:bold;    
+}

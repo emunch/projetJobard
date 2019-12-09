@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="./bug.xsl"?>
+
+<bugs>
+    <bug number="3" title="_xvec* class data and ISO C++ standard non compliance" statue="Resolved" date="2005-02-15">
+        <entry title="DISCUTION">'union' keyword is here to allow access to vector components with several different variables names. Moreover, templates are also used to create two vector type categories : _vec* and _ivec*. Eventually, anonymous structures are not allowed in ISO C++ norm.</entry>
+        <entry title="DISCUTION">Problem might come from the lack of supporting both templates and unions from Visual C++ 7.1.</entry>
+        <entry title="RESOLUTION">If -pedantic isn't used with G++, then code compiles correctly. As we are waiting for a better compromise, the code stays that way. As notified for the bug #4, the ultimate solution might be to avoid templates in vector definition.</entry>
+    </bug>
+    <bug number="2" title="'not' is a GCC keyword" statue="Partly resolved" date="2005-03-03">
+        <entry title="DISCUTION">GCC supports all C++ keywords that includes 'not', which is equivalent to '!' operator. So there is a problem with GLM because GLSL defines the 'not' function.</entry>
+        <entry title="PROPOSITION">Overloading the '!' operator or the 'not' keyword we can partly resolve the problem but leaving as ignored the GLM namespace concept. If the source code contains 'glm:not' string, then GCC gives an error.</entry>
+        <entry title="PROPOSITION">'not' is a C++ keyword so GLM mustn't define a 'not' function. However, all the compilers don't support this keyword (VC7.1). Does this name has to be changed ? For now, it is recommended to avoid using 'not'.</entry>
+    </bug>
+    <bug number="1" title="*vec* doesn't allow multiple components selection." statue="Unresolved" date="2005-01-30">
+        <entry title="DISCUTION">The GLSL specifications grant access to multiple components for vector types. i.e. with GLSL the following lines are correct : vec3 MyVector = vec4(1.0, 1.0, 1.0, 0.0).xyz.</entry>
+        <entry title="DISCUTION">It seems difficult to create an equal feature in C++ because 'x', 'y', and 'z' according to the previous example can be sorted in any order and be repeated from zero to four to a max of four components.</entry>
+    </bug>
+</bugs>
